@@ -28,9 +28,7 @@
     "build-storybook": "stencil build && build-storybook"
   },
   "dependencies": {
-    "@stencil/core": "^2.13.0"
-  },
-  "devDependencies": {
+    "@stencil/core": "^2.13.0",
     "@babel/core": "^7.18.9",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
@@ -43,5 +41,6 @@
     "babel-loader": "^8.2.5",
     "lit-html": "^2.2.7"
   },
+  "devDependencies": {},
   "license": "MIT"
 }
