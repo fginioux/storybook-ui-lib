@@ -1,0 +1,13 @@
+:host {
+  /* List variables locale */
+  --fca-button-color-primary: var(--fca-color-primary);
+  --fca-button-color-secondary: red;
+}
+
+button {
+  background: var(--fca-button-color-primary);
+}
+
+button.highlight {
+  background-color: var(--fca-button-color-secondary);
+}

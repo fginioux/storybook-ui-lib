@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/fca-ui-component.esm.js"></script>
+    <script nomodule src="/build/fca-ui-component.js"></script>
+    <link rel="stylesheet" href="/build/fca-ui-component.css" />
+  </head>
+  <body>
+    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+    <fca-ui-button type="submit" data='{"test": true}'>test</fca-ui-button>
+  </body>
+
+  <script>
+    addEventListener('load', () => {
+      const button = document.getElementsByTagName('fca-ui-button')?.[0];
+      button.addEventListener('click', (evt) => {
+        console.log('@yep', evt);
+      });
+
+      window.setTimeout(() => {
+        console.log('attach');
+        // button.data = {test: true};
+      }, 1000);
+    });
+  </script>
+</html>
